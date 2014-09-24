@@ -6,11 +6,11 @@
 
 # DONE - 2. My calendar says Sunday is the first day of the week. Write code to move Sunday from the end of the array to the beginning.
 
-# 3. I'm really excited about Thursday for some reason. Write code to find that day in the array and make it all uppercase.
+# DONE - 3. I'm really excited about Thursday for some reason. Write code to find that day in the array and make it all uppercase.
 
-# 4. Create and assign a new array which contains two sub-arrays: One containing all the weekdays, and one containing the weekends.
+# DONE - 4. Create and assign a new array which contains two sub-arrays: One containing all the weekdays, and one containing the weekends.
 
-# 5. Let's get in touch with our Viking heritage. With your new array of arrays, write code that will change Wednesday to "Woden's Day".
+# DONE - 5. Let's get in touch with our Viking heritage. With your new array of arrays, write code that will change Wednesday to "Woden's Day".
 
 # 6. On second thought, I don't like weekdays at all. Write code that deletes the weekdays from the array of arrays, leaving only the weekend days.
 
@@ -28,4 +28,27 @@ days_of_the_week.unshift(days_of_the_week.pop)
 
 #3
 days_of_the_week[days_of_the_week.index("Thursday")].upcase!
-binding.pry
+
+#4
+weekend_days = []
+weekday_days = []
+
+days_of_the_week.each do |day|
+  if day == "Saturday" || day == "Sunday"
+    weekend_days << day
+  else
+    weekday_days << day
+  end
+end
+
+weekdays_weekends_array_with_subarrays = [weekday_days, weekend_days]
+
+#5
+weekdays_weekends_array_with_subarrays[0][2] = "Woden's Day"
+
+#6
+weekdays_weekends_array_with_subarrays.delete_at(1);
+
+#7
+sorted_days_of_the_week = days_of_the_week.sort
+print sorted_days_of_the_week
