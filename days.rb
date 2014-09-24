@@ -19,7 +19,13 @@
 # 8. Finally, print out (on the terminal) the list of sorted days, with each day on its own line.
 require 'pry'
 
+#1
 days_of_the_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
+#2
 days_of_the_week.unshift(days_of_the_week.pop)
+
+
+#3
+days_of_the_week[days_of_the_week.index("Thursday")].upcase!
 binding.pry
