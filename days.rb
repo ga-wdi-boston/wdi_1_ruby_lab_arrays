@@ -51,4 +51,8 @@ weekdays_weekends_array_with_subarrays.delete_at(1);
 
 #7
 sorted_days_of_the_week = days_of_the_week.sort
-print sorted_days_of_the_week
+
+#8
+sorted_days_of_the_week.each do |day_in_alphabetical_order|
+  puts day_in_alphabetical_order
+end
