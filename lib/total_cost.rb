@@ -1,4 +1,4 @@
-
+#Calculated total costs with inputed (or default) values.
 def total_cost (inVal = {})
   #p inVal
     inVal = {

@@ -1,6 +1,4 @@
-
-
-
+#Will return an array with squared argument.
 def only_squares_can_join (inArr, *args)
   inNums = args
 

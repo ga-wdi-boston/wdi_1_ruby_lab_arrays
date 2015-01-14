@@ -1,3 +1,5 @@
+#Returns in array with only prime numbers
+
 def only_primes(array)
   outArr = []
   array.each do |elem|

@@ -1,3 +1,4 @@
+#Formats a name according to given specs.
 def name_formatter(name)
 
   inArr = name.split(" ")
