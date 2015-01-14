@@ -1,10 +1,10 @@
 def only_squares_can_join(array, *num)
-  num.each do |num|
-  if Math.sqrt(num).to_s.length ==3
-    array<< num
+  num.each do |x|
+  a = Math.sqrt(x)
+    if a ** 2 == x
+      array << x
+    end
   end
-end
-
 return array
 end
 
