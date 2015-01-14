@@ -1,9 +1,13 @@
+#require 'pry-byebug'
+#binding.pry
+
 def hashtags(tweet)
-  words = tweet.split
-  words.map do |word|
+  words = tweet.split()
+  tweeted = []
+  words.each do |word|
     if word.length > 3
-      "#" + word
-    else
-      words.delete(word)
+      tweeted.push("#" + word)
     end
+  end
+  tweeted
 end
