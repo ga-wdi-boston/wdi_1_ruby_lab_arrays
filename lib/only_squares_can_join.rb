@@ -1,6 +1,7 @@
 def only_squares_can_join(array, *num)
     num.each do |num|
-    if Math.sqrt(num).to_s.length == 3
+      a = Math.sqrt(num)
+    if a ** 2 == num
     array << num
   end
 end
