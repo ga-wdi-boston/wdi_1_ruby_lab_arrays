@@ -8,6 +8,6 @@
 #   end
 # end
 
-def carmen
-  array.index("carmen")
+def carmen(x)
+  x.index("carmen")
 end
