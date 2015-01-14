@@ -1,2 +1,3 @@
-def carmen
+def carmen(names)
+  names.index('carmen')
 end
