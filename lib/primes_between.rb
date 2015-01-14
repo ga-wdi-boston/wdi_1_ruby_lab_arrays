@@ -1,9 +1,12 @@
-#Returns in array with only prime numbers
+# primes_between code goes here
 
-def only_primes(array)
+def primes_between (prime_range)
   outArr = []
-  array.each do |elem|
+  inArr = prime_range.to_a
+
+  inArr.each do |elem|
     temp = isPrime?(elem)
+
     if temp
       outArr << temp
     end
@@ -16,7 +19,8 @@ def isPrime? (num)
 
   flag = true
   count = 2
-  root = Math.sqrt(num)
+  root = num ** 0.5
+
   while count <= root && flag == true
     if num % count == 0
       flag = false
