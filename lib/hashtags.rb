@@ -6,4 +6,5 @@ def hashtags(tweet)
     else word = nil
     end
   end).compact
+
 end

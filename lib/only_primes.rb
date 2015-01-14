@@ -1,27 +1,13 @@
-def is_prime?(x)
-  i = 2
-  if x <=3
-    true
-  end
-  while i < x
-    if x % i == 0
-      return false
-    else
-      i +=1
-    end
-  end
-  true
-end
+require 'prime.rb'
 
 def only_primes(array)
-  array.map { |x|
-    if is_prime?(x)
-      if x == 1
-      nil
-      else
-        x
-      end
-    else
-    nil
-    end}.compact
+  new_array = []
+  array.each do |x|
+    if x.prime? == true
+      new_array << x
+    end
+  end
+  return new_array
+
 end
+

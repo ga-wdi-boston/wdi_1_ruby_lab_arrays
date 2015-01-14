@@ -7,5 +7,6 @@ def name_formatter(name)
   end
 end
   return names.strip
+
 end
 

@@ -4,6 +4,7 @@ def only_squares_can_join(array, *num)
     array<< num
   end
 end
+
 return array
 end
 
